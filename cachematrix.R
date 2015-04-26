@@ -6,6 +6,7 @@
 ## 4. get the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
+## inv is used to save the inverse of a matrix
   inv <- NULL
   set <- function(y) {
     x <<- y
@@ -26,11 +27,13 @@ makeCacheMatrix <- function(x = matrix()) {
 ## inverse int the cache iva the setinverse function 
 
 cacheSolve <- function(x, ...) {
+## check if the inverse of the matrix is already created
   inv<-x$getinverse()
   if(!is.null(inv)){
     message("getting cached data")
     return(inv)
   }
+  ## if the inverse of the matrix has not been calcualted, then calculate the inverse of the matrix
   data<-x$get()
   inv<-solve(data,...)
   x$setinverse(inv)
