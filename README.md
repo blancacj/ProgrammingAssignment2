@@ -3,8 +3,6 @@
 This script is able to cache potentially time-consuming computations.
 For example, we can cache the inverse of a matrix. 
 
-### Example: Caching the inverse of a matrix
-
 
 The first function, `makeCacheMatrix` creates a special "matrix", which is
 really a list containing a function to
