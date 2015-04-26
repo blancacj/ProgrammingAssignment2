@@ -20,7 +20,7 @@ really a list containing a function to
 
 The second function `cacheSolve` calculates the inverse of the special "matrix"
 created with the above function. However, it first checks to see if the
-inverse has already been calculated. If so, it `get`s the inverse from the
+inverse has already been calculated. If so, it `get` the inverse from the
 cache and skips the computation. Otherwise, it calculates the inverse of
 the data and sets the value of the inverse in the cache via the `setinverse`
 function.
